@@ -15,6 +15,9 @@
 - Search for movies
 - View movie details, images, videos, cast and crew.
 - Add movies to favorite.
+- 
+## Screen Record
+https://www.youtube.com/watch?v=kKnFTd6chS0
 
 ## Screenshots
 
