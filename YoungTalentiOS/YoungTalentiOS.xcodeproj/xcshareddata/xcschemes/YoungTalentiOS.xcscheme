@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1520"
-   version = "1.7">
+   version = "2.2">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -15,15 +15,24 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FE7D3492BD25C0800360068"
-               BuildableName = "YoungTalentiOS.app"
+               BuildableName = "YoungTalentIos.app"
                BlueprintName = "YoungTalentiOS"
                ReferencedContainer = "container:YoungTalentiOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <AutocreatedTestPlanReference>
+            </AutocreatedTestPlanReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "ProductionDebug"
+      buildConfiguration = "DevelopmentDebug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
@@ -54,7 +63,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "ProductionDebug"
+      buildConfiguration = "DevelopmentDebug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -68,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FE7D3492BD25C0800360068"
-            BuildableName = "YoungTalentiOS.app"
+            BuildableName = "YoungTalentIos.app"
             BlueprintName = "YoungTalentiOS"
             ReferencedContainer = "container:YoungTalentiOS.xcodeproj">
          </BuildableReference>
@@ -85,14 +94,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FE7D3492BD25C0800360068"
-            BuildableName = "YoungTalentiOS.app"
+            BuildableName = "YoungTalentIos.app"
             BlueprintName = "YoungTalentiOS"
             ReferencedContainer = "container:YoungTalentiOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "ProductionDebug">
+      buildConfiguration = "DevelopmentDebug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "ProductionRelease"

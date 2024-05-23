@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5A0B3A2BEB81CA0066BD3F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A0B392BEB81CA0066BD3F /* TabBarView.swift */; };
 		1FE7D34E2BD25C0800360068 /* YoungTalentiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7D34D2BD25C0800360068 /* YoungTalentiOSApp.swift */; };
-		1FE7D3502BD25C0800360068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7D34F2BD25C0800360068 /* ContentView.swift */; };
+		1FE7D3502BD25C0800360068 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7D34F2BD25C0800360068 /* HomePageView.swift */; };
 		1FE7D3522BD25C0B00360068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE7D3512BD25C0B00360068 /* Assets.xcassets */; };
 		1FE7D3552BD25C0B00360068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE7D3542BD25C0B00360068 /* Preview Assets.xcassets */; };
 		1FE7D35F2BD25C0C00360068 /* YoungTalentiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7D35E2BD25C0C00360068 /* YoungTalentiOSTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5A0B392BEB81CA0066BD3F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		1FE7D34A2BD25C0800360068 /* YoungTalentIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoungTalentIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE7D34D2BD25C0800360068 /* YoungTalentiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungTalentiOSApp.swift; sourceTree = "<group>"; };
-		1FE7D34F2BD25C0800360068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FE7D34F2BD25C0800360068 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		1FE7D3512BD25C0B00360068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE7D3542BD25C0B00360068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FE7D35A2BD25C0C00360068 /* YoungTalentiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTalentiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5A0B382BEB81B40066BD3F /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A0B392BEB81CA0066BD3F /* TabBarView.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		1FE7D3412BD25C0800360068 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +108,10 @@
 		1FE7D34C2BD25C0800360068 /* YoungTalentiOS */ = {
 			isa = PBXGroup;
 			children = (
+				1F5A0B382BEB81B40066BD3F /* HomePage */,
 				1FE7D3772BD25C3400360068 /* Info.plist */,
 				1FE7D34D2BD25C0800360068 /* YoungTalentiOSApp.swift */,
-				1FE7D34F2BD25C0800360068 /* ContentView.swift */,
+				1FE7D34F2BD25C0800360068 /* HomePageView.swift */,
 				1FE7D3512BD25C0B00360068 /* Assets.xcassets */,
 				1FE7D3532BD25C0B00360068 /* Preview Content */,
 			);
@@ -271,7 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE7D3502BD25C0800360068 /* ContentView.swift in Sources */,
+				1FE7D3502BD25C0800360068 /* HomePageView.swift in Sources */,
+				1F5A0B3A2BEB81CA0066BD3F /* TabBarView.swift in Sources */,
 				1FE7D34E2BD25C0800360068 /* YoungTalentiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +357,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -411,6 +424,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -613,6 +627,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -751,6 +766,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
