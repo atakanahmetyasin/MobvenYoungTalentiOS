@@ -15,7 +15,7 @@
 - Search for movies
 - View movie details, images, videos, cast and crew.
 - Add movies to favorite.
-- 
+- Light Mode, Dark Mode
 ## Screen Record
 https://www.youtube.com/watch?v=kKnFTd6chS0
 
@@ -33,3 +33,4 @@ https://www.youtube.com/watch?v=kKnFTd6chS0
 <br>
 <img src="https://github.com/atakanahmetyasin/MobvenYoungTalentiOS/assets/142516106/cadcd26e-3a29-4ac2-858b-74f1364b30ee" width="200" height="400" />
 <img src="https://github.com/atakanahmetyasin/MobvenYoungTalentiOS/assets/142516106/65fb562f-e5e5-4244-b473-ee4d0c79741c" width="200" height="400" />
+<img src="https://github.com/atakanahmetyasin/MobvenYoungTalentiOS/assets/142516106/0b9819b2-162e-4b72-9bcd-cf60556b0f14" width="200" height="400" />
