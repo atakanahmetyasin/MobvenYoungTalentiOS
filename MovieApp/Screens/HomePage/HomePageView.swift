@@ -8,7 +8,7 @@ import SwiftUI
 
 struct HomePageView<Model>: View  where Model: HomePageViewModelProtocol {
     @StateObject var viewModel: Model
-    @State var showingNow: Bool = true
+    @State private var showingNow: Bool = true
     @State private var isSearching = false
     var body: some View {
         GeometryReader { _ in
@@ -64,5 +64,5 @@ struct HomePageView<Model>: View  where Model: HomePageViewModelProtocol {
 }
 
 #Preview {
-    HomePageView(viewModel: HomePageViewModel(), showingNow: true)
+    HomePageView(viewModel: HomePageViewModel())
 }
