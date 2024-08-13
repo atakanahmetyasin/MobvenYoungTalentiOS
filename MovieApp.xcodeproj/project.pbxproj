@@ -56,7 +56,6 @@
 		1F4054152BF2BB00002DD4D5 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4054142BF2BB00002DD4D5 /* MockHTTPClient.swift */; };
 		1F4054172BF2BFDF002DD4D5 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4054162BF2BFDF002DD4D5 /* NetworkTests.swift */; };
 		1F4054452BF616B1002DD4D5 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4054442BF616B1002DD4D5 /* CustomBackButton.swift */; };
-		1F543B162C6A1D430027FD65 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F543B152C6A1D420027FD65 /* StarRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +128,6 @@
 		1F4054142BF2BB00002DD4D5 /* MockHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
 		1F4054162BF2BFDF002DD4D5 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		1F4054442BF616B1002DD4D5 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
-		1F543B152C6A1D420027FD65 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,7 +363,6 @@
 		1F4053F52BF0357A002DD4D5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1F543B142C6A1D2E0027FD65 /* ReusableViews */,
 				1F4053F62BF2154B002DD4D5 /* SplashScreenView */,
 				1F4053FE2BF22BDB002DD4D5 /* MovieVideos */,
 				1F4054052BF242CC002DD4D5 /* ReleaseDates */,
@@ -438,14 +435,6 @@
 				1F4054442BF616B1002DD4D5 /* CustomBackButton.swift */,
 			);
 			path = CustomBackButton;
-			sourceTree = "<group>";
-		};
-		1F543B142C6A1D2E0027FD65 /* ReusableViews */ = {
-			isa = PBXGroup;
-			children = (
-				1F543B152C6A1D420027FD65 /* StarRatingView.swift */,
-			);
-			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -617,7 +606,6 @@
 				1F4054042BF22C0E002DD4D5 /* MovieVideosModel.swift in Sources */,
 				1F4053B72BEBD80C002DD4D5 /* ZStackView.swift in Sources */,
 				1F4053BD2BEBF78C002DD4D5 /* DetailScreenModel.swift in Sources */,
-				1F543B162C6A1D430027FD65 /* StarRatingView.swift in Sources */,
 				1F4053B52BEBD7B9002DD4D5 /* MovieDetailView.swift in Sources */,
 				1F4053A62BEB9982002DD4D5 /* MovieEndpoint.swift in Sources */,
 				1F4054002BF22BEC002DD4D5 /* MovieVideosView.swift in Sources */,

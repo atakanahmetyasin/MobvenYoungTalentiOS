@@ -3,20 +3,18 @@ import SwiftUI
 struct MovieDetailView: View {
     @State var movieID: Int
     @StateObject var viewModel = DetailScreenViewModel()
-    @State private var synopsisExpand: Bool = false
+    @State var synopsisExpand: Bool = false
     var body: some View {
         VStack(spacing: 14) {
-            if let originalTitle = viewModel.detailResult?.originalTitle {
-                Text(originalTitle)
-                    .fontWeight(.medium)
-                    .font(.system(size: 24))
-                    .foregroundStyle(Color("AdaptiveColor"))
-            }
+            Text(viewModel.detailResult?.originalTitle ?? "l")
+                .fontWeight(.medium)
+                .font(.system(size: 24))
+                .foregroundStyle(Color("AdaptiveColor"))
             HStack {
                 Text(String((viewModel.detailResult?.runtime ?? 0) / 60) + "h")
                 Text(String((viewModel.detailResult?.runtime ?? 0) % 60) + "m")
                 Text("|")
-//                ReleaseDatesView(viewModel: ReleaseDatesViewModel(), movieID: movieID)
+                ReleaseDatesView(viewModel: ReleaseDatesViewModel(), movieID: movieID)
             }
             .foregroundStyle(Color("AdaptiveColor").opacity(0.5))
             HStack {
@@ -31,7 +29,10 @@ struct MovieDetailView: View {
                     Text(String(format: "%.1f/5", voteAverage / 2))
                         .font(.system(size: 30))
                         .foregroundColor(Color("AdaptiveColor"))
-                    StarRatingView(roundedVote: roundedVote)
+                    ForEach(1...5, id: \.self) { star in
+                        Image(systemName: star <= roundedVote ? "star.fill" : "star")
+                            .foregroundColor(.yellow)
+                    }
                 }
             }
             Text("Synopsis")
