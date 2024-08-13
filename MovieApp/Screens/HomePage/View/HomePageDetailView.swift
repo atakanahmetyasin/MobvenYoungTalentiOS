@@ -7,18 +7,15 @@
 import SwiftUI
 
 struct HomePageDetailView: View {
-    @State var movieID: Int
+    let movieID: Int
     @StateObject var viewModel = DetailScreenViewModel()
+    @StateObject var releaseDateVM = ReleaseDatesViewModel()
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 if let voteAverage = viewModel.detailResult?.voteAverage {
                     let roundedVote = Int(round(voteAverage / 2))
-                    ForEach(1...5, id: \.self) { star in
-                        Image(systemName: star <= roundedVote ? "star.fill" : "star")
-                            .foregroundColor(.yellow)
-                            .frame(width: 14, height: 14)
-                    }
+                    StarRatingView(roundedVote: roundedVote)
                     .padding(.top, 16)
                     .frame(width: 14, alignment: .leading)
                 }
@@ -37,16 +34,29 @@ struct HomePageDetailView: View {
                 Text(String((viewModel.detailResult?.runtime ?? 0) / 60) + "h")
                 Text(String((viewModel.detailResult?.runtime ?? 0) % 60) + "m")
                 Text("|")
-                ReleaseDatesView(viewModel: ReleaseDatesViewModel(), movieID: movieID)
+                Text(firstNonEmptyCertification())
+                //                ReleaseDatesView(viewModel: ReleaseDatesViewModel(), movieID: movieID)
             }
             .foregroundStyle(Color("AdaptiveColor").opacity(0.5))
             .font(.custom("SF-Pro-Text", size: 12))
-        }.task {
-            await viewModel.getMoviesDetail(movieID: movieID)
         }
+        .task {
+            await viewModel.getMoviesDetail(movieID: movieID)
+            await releaseDateVM.getReleaseDates(movieID: movieID)
+        }
+    }
+    private func firstNonEmptyCertification() -> String {
+        for result in releaseDateVM.resultReleaseDates?.results ?? [] {
+            if let certification = result.releaseDates?.compactMap({ $0.certification }).first(where: { !$0.isEmpty }) {
+                return certification
+            }
+        }
+        return ""
     }
 }
 
 #Preview {
     HomePageDetailView(movieID: 424)
 }
+
+
