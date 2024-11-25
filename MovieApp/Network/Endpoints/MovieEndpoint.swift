@@ -20,15 +20,16 @@ extension MovieEndpoint: Endpoint {
     var header: [String: String]? {
         switch self {
         case .nowShowing, .comingSoon, .detail, .movieImage, .movieVideo, .credits, .releaseDate:
+            guard let token = ProcessInfo.processInfo.environment["API_TOKEN"] else {
+                return nil
+            }
             return [
                 "accept": "application/json",
-                "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9" +
-                ".eyJhdWQiOiI3N2ZmNzExZjAxYjE0YjFjO" +
-                "DE0Zjc2YTRhNGM1NzEwZSIsInN1YiI6IjY2MzEwMTBjOTBkZGUwMDEyYzJhNDdiYiIsInNjb3BlcyI6WyJhcGlfcm" +
-                "VhZCJdLCJ2ZXJzaW9uIjoxfQ.8IYGPisp7ChsDSqN-lywDmH8guX0rQaQ_cFy_Gd_byQ"
+                "Authorization": "Bearer \(token)"
             ]
         }
     }
+
     var body: [String: String]? {
         return nil
     }
